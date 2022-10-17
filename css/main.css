@@ -1,0 +1,145 @@
+body {
+    font-family: Poppins;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.head1 {
+    margin: 50px auto;
+}
+
+.head1 h1:first-child {
+    font-weight: 200;
+    color: #949496;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.head1 h1:nth-child(2) {
+    margin-top: 0;
+    text-align: center
+}
+
+@media (max-width:375px) {
+    .head1 h1:first-child {
+        font-size: medium
+    }
+
+    .head1 h1:nth-child(2) {
+        font-size: medium
+    }
+}
+
+.head1 p {
+    width: 50%;
+    margin: auto;
+    font-size: 15px;
+    color: #949496;
+    text-align: center
+}
+
+@media (max-width:375px) {
+    .head1 p {
+        width: 90%;
+        font-size: .8em;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+.cards {
+    /*height: 700px;*/
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    /*the only way that worked for gap between the rows*/
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:1270px) {
+    .cards{
+    flex-direction: column;
+    justify-content: center
+}}
+
+/* @media (max-width:375px) {
+    .cards {
+      
+    }
+} */
+
+.card {
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    box-shadow: 2px 2px 10px 5px rgb(218, 215, 215);
+    border-radius: 4px;
+    position:relative;
+
+}
+@media (max-width:395px) {
+    .card
+    {
+        width: 85%;
+    }
+}
+
+
+.the-middle-cards {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+@media (max-width:395px) {
+    .the-middle-cards
+    {
+        width: 85%;
+    }
+}
+.cards :nth-child(2) div {
+    height: 250px;
+    width: 350px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #949496;
+    margin: 18px;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.card h2 {
+    margin: 18px;
+    margin-bottom: 0;
+}
+
+svg{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+}
+.Calculator{
+    border-top: solid 4px #539DF0
+}
+.Karma{
+    border-top: solid 4px #FCAE4A
+}
+.Supervisor{
+    border-top: solid 4px #5CC7C8
+}
+.Team-Builder{
+    border-top: solid 4px #DC5B59
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
